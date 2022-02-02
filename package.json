@@ -1,0 +1,11 @@
+{
+    "name": "test-config",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">= 12.3.0",
+        "npm": ">= 6.9.0"
+    },
+    "scripts": {
+        "start": "node index.js --boundHost $OPENSHIFT_INTERNAL_IP"
+    }
+}
