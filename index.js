@@ -3,7 +3,7 @@ var http = require('http');
 var json = {
     "deviceGroup": "androidtv",
     "variantFeatures":[
-      "mpeg-dash",
+      "dvb-dash",
       "playready",
       "outband-webvtt",
       "progressive"
