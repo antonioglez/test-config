@@ -1,1 +1,1 @@
-Header set Access-Control-Allow-Origin "https://app-sit.10ft.itv.com"
+Header set Access-Control-Allow-Origin "*"
