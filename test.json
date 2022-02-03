@@ -2,7 +2,7 @@
   "deviceGroup": "androidtv",
   "variantFeatures":[
     "mpeg-dash",
-    "playready",
+    "widevine",
     "outband-webvtt",
     "progressive"
   ],
