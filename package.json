@@ -6,6 +6,6 @@
         "npm": ">= 6.9.0"
     },
     "scripts": {
-        "start": "node index.js --boundHost $OPENSHIFT_INTERNAL_IP"
+        "start": "node files.js --boundHost $OPENSHIFT_INTERNAL_IP"
     }
 }
