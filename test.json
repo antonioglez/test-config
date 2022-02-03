@@ -1,10 +1,8 @@
 {
   "deviceGroup": "androidtv",
   "variantFeatures":[
-    "mpeg-dash",
-    "widevine",
-    "outband-webvtt",
-    "progressive"
+    "hls",
+    "aes"
   ],
   "modules": [
     "home",
