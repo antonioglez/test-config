@@ -4,7 +4,7 @@
     "progressive",
     "outband-webvtt",
     "mpeg-dash",
-    "playready"
+    "widevine"
   ],
   "modules": [
     "home",
