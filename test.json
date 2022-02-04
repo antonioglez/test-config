@@ -1,8 +1,10 @@
 {
   "deviceGroup": "androidtv",
-  "variantFeatures":[
-    "hls",
-    "aes"
+  "variantFeatures": [
+    "progressive",
+    "outband-webvtt",
+    "mpeg-dash",
+    "playready"
   ],
   "modules": [
     "home",
@@ -27,10 +29,6 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
-    "playerEngine": {
-      "vod": "shaka",
-      "sim": "shaka"
-    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
