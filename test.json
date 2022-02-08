@@ -33,6 +33,76 @@
       "vod": "shaka",
       "sim": "shaka"
     },
+    "simulcast": {
+      "enabled": true,
+      "options": {
+        "playlistOverride": {
+          "enabled": true,
+          "channels": [
+            {
+              "channel": "itv",
+              "featureSet": [
+                "mpeg-dash",
+                "widevine"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itvbe",
+              "featureSet": [
+                "mpeg-dash",
+                "widevine"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv2",
+              "featureSet": [
+                "mpeg-dash",
+                "widevine"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv3",
+              "featureSet": [
+                "mpeg-dash",
+                "widevine"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv4",
+              "featureSet": [
+                "mpeg-dash",
+                "widevine"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "citv",
+              "featureSet": [
+                "mpeg-dash",
+                "widevine"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            }
+          ]
+        }
+      }
+    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
@@ -81,11 +151,13 @@
     "ga": {
       "token": "UA-17825253-118"
     },
-    "gtm": {
-      "token": "GTM-52XV8MF"
-    },
     "ace": {
       "url": "https://secure.pes.itv.com/ace/0.1.1/event"
+    }
+  },
+  "options": {
+    "watchLive": {
+      "refreshInterval": 60000
     }
   },
   "abTest": {
@@ -283,47 +355,47 @@
             {
               "programmeId": "2_7844",
               "title": "Des",
-              "image": "https://hubimages.itv.com/episode/2_7844_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7844_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_5041",
               "title": "The Bay",
-              "image": "https://hubimages.itv.com/episode/2_5041_0012?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_5041_0012?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "7_0127",
               "title": "Finding Alice",
-              "image": "https://hubimages.itv.com/episode/7_0127_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/7_0127_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_4269",
               "title": "Marcella",
-              "image": "https://hubimages.itv.com/episode/2_4269_0025?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_4269_0025?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_6732",
               "title": "The Pembrokeshire Murders",
-              "image": "https://hubimages.itv.com/episode/2_6732_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_6732_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_7595",
               "title": "The Sister",
-              "image": "https://hubimages.itv.com/episode/2_7595_0004?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7595_0004?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_7534",
               "title": "Honour",
-              "image": "https://hubimages.itv.com/episode/2_7534_0002?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7534_0002?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_7035",
               "title": "The Singapore Grip",
-              "image": "https://hubimages.itv.com/episode/2_7035_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7035_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_3958",
               "title": "Tina & Bobby",
-              "image": "https://hubimages.itv.com/episode/2_3958_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_3958_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             }
           ]
         }
