@@ -3,7 +3,7 @@
   "variantFeatures": [
     "outband-webvtt",
     "progressive",
-    "playready",
+    "widevine",
     "mpeg-dash"
   ],
   "modules": [
