@@ -2,6 +2,7 @@
   "deviceGroup": "samsung",
   "variantFeatures": [
     "outband-webvtt",
+    "progressive",
     "playready",
     "mpeg-dash"
   ],
