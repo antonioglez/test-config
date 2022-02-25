@@ -3,7 +3,7 @@
   "variantFeatures": [
     "outband-webvtt",
     "progressive",
-    "widevine",
+    "playready",
     "mpeg-dash"
   ],
   "modules": [
@@ -29,7 +29,6 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
-    "playerEngine": { "vod": "shaka" },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
