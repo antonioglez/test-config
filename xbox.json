@@ -2,7 +2,7 @@
   "deviceGroup": "xbox",
   "variantFeatures": [
     "mpeg-dash",
-    "playready",
+    "widevine",
     "progressive",
     "outband-webvtt"
   ],
