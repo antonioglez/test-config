@@ -1,6 +1,6 @@
 {
   "deviceGroup": "xbox",
-  "variantFeatures": ["mpeg-dash", "playready"],
+  "variantFeatures": ["dvb-dash", "playready"],
   "modules": [
     "home",
     "categories",
@@ -24,6 +24,9 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
+    "playerEngine": {
+      "vod": "shaka"
+    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
