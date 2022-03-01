@@ -1,6 +1,6 @@
 {
   "deviceGroup": "xbox",
-  "variantFeatures": ["mpeg-dash", "playready"],
+  "variantFeatures": ["dvb-dash", "playready"],
   "modules": [
     "home",
     "categories",
