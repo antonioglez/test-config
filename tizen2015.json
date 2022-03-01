@@ -3,8 +3,8 @@
   "variantFeatures": [
     "outband-webvtt",
     "progressive",
-    "playready",
-    "dvb-dash"
+    "widevine",
+    "mpg-dash"
   ],
   "modules": [
     "home",
