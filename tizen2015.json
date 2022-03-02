@@ -30,6 +30,7 @@
   },
   "features": {
     "playerEngine": { "vod": "shaka", "sim": "shaka" },
+    "shakaPlayerVersion": "2.5.9",
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
