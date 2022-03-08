@@ -1,7 +1,7 @@
 {
   "deviceGroup": "freesat",
   "variantFeatures": [
-    "mpeg-dash",
+    "dvb-dash",
     "playready",
     "progressive",
     "outband-webvtt"
