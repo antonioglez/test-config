@@ -1,11 +1,6 @@
 {
   "deviceGroup": "xbox",
-  "variantFeatures": [
-    "mpeg-dash",
-    "playready",
-    "progressive",
-    "outband-webvtt"
-  ],
+  "variantFeatures": ["mpeg-dash", "playready", "progressive", "inband-webvtt"],
   "modules": [
     "home",
     "categories",
