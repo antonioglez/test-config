@@ -232,7 +232,7 @@
         }
       },
       "CAT_CHALLENGER_TOP_PICKS": {
-        "enabled": true,
+        "enabled": false,
         "agent": "a-jHW9H75XmiI7",
         "goals": {
           "CLICK_TOP_PICK_RAIL_S": "g-ivbFwi7YdB",
