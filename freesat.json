@@ -1,7 +1,7 @@
 {
-  "deviceGroup": "xbox",
+  "deviceGroup": "freesat",
   "variantFeatures": [
-    "mpeg-dash",
+    "dvb-dash",
     "playready",
     "progressive",
     "outband-webvtt"
@@ -29,22 +29,19 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
-    "playerEngine": {
-      "vod": "shaka",
-      "sim": "shaka"
-    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
       "options": {
-        "pageType": "notSupported"
+        "pageType": "comingSoon"
       }
     },
     "myList": true,
     "recommendations": true,
+    "curatedTileImages": false,
     "becauseYouWatched": true,
     "onwardJourney": true,
-    "hubPlusUpsellReskin": false,
+    "hubPlusUpsellReskin": true,
     "profilesManagement": false,
     "targetedContainers": {
       "enabled": true,
@@ -78,6 +75,9 @@
     "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
     "cpt": "https://cpt.itv.com/0.0.1/event",
     "pes": "https://secure.pes.itv.com/1.1.3/event",
+    "conviva": {
+      "enabled": false
+    },
     "ga": {
       "token": "UA-17825253-118"
     },
@@ -86,6 +86,12 @@
     },
     "ace": {
       "url": "https://secure.pes.itv.com/ace/0.1.1/event"
+    }
+  },
+  "options": {
+    "hubPlus": {
+      "upgradeUrl": "www.itv.com/upgrade",
+      "qrCode": "hubplus-subscribe.png"
     }
   },
   "abTest": {
@@ -232,7 +238,7 @@
         }
       },
       "CAT_CHALLENGER_TOP_PICKS": {
-        "enabled": false,
+        "enabled": true,
         "agent": "a-jHW9H75XmiI7",
         "goals": {
           "CLICK_TOP_PICK_RAIL_S": "g-ivbFwi7YdB",
@@ -268,47 +274,47 @@
             {
               "programmeId": "2_7844",
               "title": "Des",
-              "image": "https://hubimages.itv.com/episode/2_7844_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7844_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_5041",
               "title": "The Bay",
-              "image": "https://hubimages.itv.com/episode/2_5041_0012?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_5041_0012?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "7_0127",
               "title": "Finding Alice",
-              "image": "https://hubimages.itv.com/episode/7_0127_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/7_0127_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_4269",
               "title": "Marcella",
-              "image": "https://hubimages.itv.com/episode/2_4269_0025?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_4269_0025?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_6732",
               "title": "The Pembrokeshire Murders",
-              "image": "https://hubimages.itv.com/episode/2_6732_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_6732_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_7595",
               "title": "The Sister",
-              "image": "https://hubimages.itv.com/episode/2_7595_0004?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7595_0004?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_7534",
               "title": "Honour",
-              "image": "https://hubimages.itv.com/episode/2_7534_0002?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7534_0002?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_7035",
               "title": "The Singapore Grip",
-              "image": "https://hubimages.itv.com/episode/2_7035_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_7035_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             },
             {
               "programmeId": "2_3958",
               "title": "Tina & Bobby",
-              "image": "https://hubimages.itv.com/episode/2_3958_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
+              "image": "http://hubimages.itv.com/episode/2_3958_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
             }
           ]
         }
