@@ -30,8 +30,59 @@
   },
   "features": {
     "playerEngine": {
-      "vod": "shaka",
-      "sim": "shaka"
+      "vod": "shaka"
+    },
+    "simulcast": {
+      "enabled": true,
+      "options": {
+        "playlistOverride": {
+          "enabled": true,
+          "channels": [
+            {
+              "channel": "itv",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itvbe",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv2",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv3",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv4",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "citv",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": true
+            }
+          ]
+        }
+      }
     },
     "emailVerificationStandardUser": true,
     "britbox": {
