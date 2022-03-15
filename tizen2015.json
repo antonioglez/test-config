@@ -4,7 +4,7 @@
     "outband-webvtt",
     "progressive",
     "playready",
-    "dvb-dash"
+    "mpeg-dash"
   ],
   "modules": [
     "home",
