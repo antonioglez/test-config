@@ -33,7 +33,21 @@
       "vod": "shaka",
       "sim": "shaka"
     },
-    "simulcast": true,
+    "simulcast": {
+      "enabled": true,
+      "options": {
+        "playlistOverride": {
+          "enabled": true,
+          "channels": [
+            {
+              "channel": "itv",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
+            }
+          ]
+        }
+      }
+    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
