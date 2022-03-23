@@ -43,7 +43,43 @@
               "channel": "itv",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itvbe",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv2",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv3",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv4",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "citv",
+              "featureSet": ["mpeg-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
             }
           ]
         }
