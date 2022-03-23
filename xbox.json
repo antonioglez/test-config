@@ -42,7 +42,8 @@
             {
               "channel": "itv",
               "featureSet": ["mpeg-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka"
             }
           ]
         }
