@@ -43,43 +43,37 @@
               "channel": "itv",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itvbe",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itv2",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itv3",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itv4",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "citv",
               "featureSet": ["mpeg-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             }
           ]
         }
