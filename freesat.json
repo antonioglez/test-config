@@ -29,10 +29,6 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
-    "playerEngine": {
-      "vod": "xdk",
-      "sim": "shaka"
-    },
     "simulcast": {
       "enabled": true,
       "options": {
@@ -46,7 +42,6 @@
                 "playready"
               ],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
               "startAgainEnabled": true
             },
             {
@@ -56,7 +51,6 @@
                 "playready"
               ],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
               "startAgainEnabled": true
             },
             {
@@ -66,7 +60,6 @@
                 "playready"
               ],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
               "startAgainEnabled": true
             },
             {
@@ -76,7 +69,6 @@
                 "playready"
               ],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
               "startAgainEnabled": true
             },
             {
@@ -86,7 +78,6 @@
                 "playready"
               ],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
               "startAgainEnabled": true
             },
             {
@@ -96,7 +87,6 @@
                 "playready"
               ],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka",
               "startAgainEnabled": true
             }
           ]
