@@ -29,6 +29,80 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
+    "playerEngine": {
+      "vod": "xdk",
+      "sim": "shaka"
+    },
+    "simulcast": {
+      "enabled": true,
+      "options": {
+        "playlistOverride": {
+          "enabled": true,
+          "channels": [
+            {
+              "channel": "itv",
+              "featureSet": [
+                "dvb-dash",
+                "playready"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itvbe",
+              "featureSet": [
+                "dvb-dash",
+                "playready"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv2",
+              "featureSet": [
+                "dvb-dash",
+                "playready"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv3",
+              "featureSet": [
+                "dvb-dash",
+                "playready"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "itv4",
+              "featureSet": [
+                "dvb-dash",
+                "playready"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            },
+            {
+              "channel": "citv",
+              "featureSet": [
+                "dvb-dash",
+                "playready"
+              ],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "shaka",
+              "startAgainEnabled": true
+            }
+          ]
+        }
+      }
+    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
@@ -38,7 +112,6 @@
     },
     "myList": true,
     "recommendations": true,
-    "curatedTileImages": false,
     "becauseYouWatched": true,
     "onwardJourney": true,
     "hubPlusUpsellReskin": true,
@@ -86,12 +159,6 @@
     },
     "ace": {
       "url": "https://secure.pes.itv.com/ace/0.1.1/event"
-    }
-  },
-  "options": {
-    "hubPlus": {
-      "upgradeUrl": "www.itv.com/upgrade",
-      "qrCode": "hubplus-subscribe.png"
     }
   },
   "abTest": {
@@ -350,6 +417,24 @@
           "CLICK_CONTINUE_WATCHING_RAIL_S": "g-YT15S0h460",
           "CLICK_CONTINUE_WATCHING_RAIL_M": "g-2hse0LeBNE",
           "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
+          "PLAY_VOD_S": "g-tzxd1GYTTU",
+          "PLAY_VOD_M": "g-kzaU8bLbLd",
+          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
+          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
+          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
+          "PLAY_CONTENT_M": "g-torwoFBuUz"
+        }
+      },
+      "HOME_PORTRAIT_SLIDER": {
+        "enabled": true,
+        "agent": "a-uBCoXP0NRkDY",
+        "goals": {
+          "CLICK_ANY_HOMEPAGE_SLIDER_S": "g-48G0vRw2Ix",
+          "CLICK_ANY_HOMEPAGE_SLIDER_M": "g-qzGACUWC3l",
+          "CLICK_TOP_PICKS_SLIDER_S": "g-ytR59HqPLj",
+          "CLICK_TOP_PICKS_SLIDER_M": "g-uJpPiiAPPR",
+          "VIEW_PROGRAMME_PAGE": "g-RUjRhGCVep",
+          "VIEW_SEARCH_RESULTS": "g-vxBOKrAplk",
           "PLAY_VOD_S": "g-tzxd1GYTTU",
           "PLAY_VOD_M": "g-kzaU8bLbLd",
           "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
