@@ -29,6 +29,10 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
+    "playerEngine": {
+      "vod": "xdk",
+      "sim": "shaka"
+    },
     "simulcast": {
       "enabled": true,
       "options": {
