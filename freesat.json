@@ -29,10 +29,6 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
-    "playerEngine": {
-      "vod": "xdk",
-      "sim": "shaka"
-    },
     "simulcast": {
       "enabled": true,
       "options": {
@@ -41,57 +37,39 @@
           "channels": [
             {
               "channel": "itv",
-              "featureSet": [
-                "dvb-dash",
-                "playready"
-              ],
+              "featureSet": ["dvb-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itvbe",
-              "featureSet": [
-                "dvb-dash",
-                "playready"
-              ],
+              "featureSet": ["dvb-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itv2",
-              "featureSet": [
-                "dvb-dash",
-                "playready"
-              ],
+              "featureSet": ["dvb-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itv3",
-              "featureSet": [
-                "dvb-dash",
-                "playready"
-              ],
+              "featureSet": ["dvb-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "itv4",
-              "featureSet": [
-                "dvb-dash",
-                "playready"
-              ],
+              "featureSet": ["dvb-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             },
             {
               "channel": "citv",
-              "featureSet": [
-                "dvb-dash",
-                "playready"
-              ],
+              "featureSet": ["dvb-dash", "playready"],
               "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "startAgainEnabled": true
+              "playerEngine": "shaka"
             }
           ]
         }
