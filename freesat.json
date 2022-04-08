@@ -38,38 +38,32 @@
             {
               "channel": "itv",
               "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
             },
             {
               "channel": "itvbe",
               "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
             },
             {
               "channel": "itv2",
               "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
             },
             {
               "channel": "itv3",
               "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
             },
             {
               "channel": "itv4",
               "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
             },
             {
               "channel": "citv",
               "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "shaka"
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
             }
           ]
         }
