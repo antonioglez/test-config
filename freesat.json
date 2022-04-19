@@ -1,5 +1,5 @@
 {
-  "deviceGroup": "youview",
+  "deviceGroup": "freesat",
   "variantFeatures": [
     "dvb-dash",
     "playready",
