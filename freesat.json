@@ -1,5 +1,5 @@
 {
-  "deviceGroup": "youview",
+  "deviceGroup": "freesat",
   "variantFeatures": [
     "dvb-dash",
     "playready",
@@ -18,10 +18,10 @@
     "profiles"
   ],
   "services": {
-    "promoted": "https://promoted.hubsvc.itv.com",
-    "discovery": "https://discovery.hubsvc.itv.com",
-    "static": "https://static.10ft.itv.com",
-    "regionalisation": "https://regionalisation.prd.user.itv.com",
+    "promoted": "http://promoted.hubsvc.itv.com",
+    "discovery": "http://discovery.hubsvc.itv.com",
+    "static": "http://static.10ft.itv.com",
+    "regionalisation": "http://regionalisation.prd.user.itv.com",
     "contentInventory": "https://content-inventory.prd.oasvc.itv.com",
     "textSearch": "https://textsearch.prd.oasvc.itv.com",
     "content": "https://content.prd.user.itv.com",
@@ -29,6 +29,7 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
+    "emailVerificationStandardUser": true,
     "simulcast": {
       "enabled": true,
       "options": {
@@ -69,7 +70,6 @@
         }
       }
     },
-    "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
       "options": {
@@ -78,10 +78,12 @@
     },
     "myList": true,
     "recommendations": true,
+    "curatedTileImages": true,
     "becauseYouWatched": true,
     "onwardJourney": true,
     "hubPlusUpsellReskin": true,
     "profilesManagement": false,
+    "textSearch": true,
     "targetedContainers": {
       "enabled": true,
       "featured": {
@@ -106,9 +108,9 @@
     "animations": true
   },
   "resources": {
-    "cookiePolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
-    "privacyPolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
-    "terms": "https://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/terms-gdpr.html"
+    "cookiePolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
+    "privacyPolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
+    "terms": "http://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/terms-gdpr.html"
   },
   "tracking": {
     "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
@@ -125,6 +127,12 @@
     },
     "ace": {
       "url": "https://secure.pes.itv.com/ace/0.1.1/event"
+    }
+  },
+  "options": {
+    "hubPlus": {
+      "upgradeUrl": "www.itv.com/upgrade",
+      "qrCode": "hubplus-subscribe.png"
     }
   },
   "abTest": {
@@ -401,6 +409,21 @@
           "CLICK_TOP_PICKS_SLIDER_M": "g-uJpPiiAPPR",
           "VIEW_PROGRAMME_PAGE": "g-RUjRhGCVep",
           "VIEW_SEARCH_RESULTS": "g-vxBOKrAplk",
+          "PLAY_VOD_S": "g-tzxd1GYTTU",
+          "PLAY_VOD_M": "g-kzaU8bLbLd",
+          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
+          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
+          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
+          "PLAY_CONTENT_M": "g-torwoFBuUz"
+        }
+      },
+      "HOME_HERO": {
+        "enabled": true,
+        "agent": "a-cWpNZwPcYc",
+        "goals": {
+          "CLICK_HERO_TILE_S": "g-rYHpu7p2nN",
+          "CLICK_HERO_TILE_M": "g-i5ykeReXRj",
+          "VIEW_PROGRAMME_PAGE": "g-RUjRhGCVep",
           "PLAY_VOD_S": "g-tzxd1GYTTU",
           "PLAY_VOD_M": "g-kzaU8bLbLd",
           "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
