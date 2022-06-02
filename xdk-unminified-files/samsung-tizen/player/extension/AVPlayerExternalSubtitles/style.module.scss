@@ -1,0 +1,21 @@
+.subtitle {
+  font-family: Arial, Roboto, proportionalSansSerif, default;
+  width: 960px;
+  font-size: 32px;
+  font-weight: bolder;
+  background-color: black;
+  position: fixed;
+  height: auto;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:empty {
+    visibility: hidden;
+  }
+}
