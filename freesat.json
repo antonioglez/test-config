@@ -1,10 +1,10 @@
 {
-  "deviceGroup": "freesat",
+  "deviceGroup": "freeview",
   "variantFeatures": [
     "dvb-dash",
+    "outband-webvtt",
     "playready",
-    "progressive",
-    "outband-webvtt"
+    "progressive"
   ],
   "modules": [
     "home",
@@ -29,51 +29,15 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
-    "emailVerificationStandardUser": true,
-    "simulcast": {
-      "enabled": true,
-      "options": {
-        "playlistOverride": {
-          "enabled": true,
-          "channels": [
-            {
-              "channel": "itv",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
-            },
-            {
-              "channel": "itvbe",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
-            },
-            {
-              "channel": "itv2",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
-            },
-            {
-              "channel": "itv3",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
-            },
-            {
-              "channel": "itv4",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
-            },
-            {
-              "channel": "citv",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json"
-            }
-          ]
-        }
-      }
+    "playerEngine": {
+      "vod": "shaka",
+      "sim": "shaka"
     },
+    "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
       "options": {
-        "pageType": "comingSoon"
+        "pageType": "supported"
       }
     },
     "myList": true,
@@ -105,7 +69,7 @@
     "collectionsNavIcon": false
   },
   "profile": {
-    "animations": true
+    "animations": false
   },
   "resources": {
     "cookiePolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
@@ -138,228 +102,6 @@
   "abTest": {
     "endpoint": "https://api-itv-hub.conductrics.com/ac-WIaPLGnSvP/v3/agent-api/dt-VFMNUpcZWuF83rpodyGCKhul2Kh8Aw?apikey=api-VrgFgnXzcMQtgNTBTInu",
     "list": {
-      "NULL_SEARCH_BUTTONS": {
-        "enabled": true,
-        "agent": "a-RvE9c3jlTF",
-        "goals": {
-          "CLICK_SEARCH_CTA": "g-yVomXr1yfW",
-          "VIEW_CATEGORY_PAGE": "g-oNGQWOIFQe",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        },
-        "data": {
-          "firstRowButtons": [
-            {
-              "to": "categories/drama-and-soaps",
-              "text": "Drama & Soaps"
-            },
-            {
-              "to": "categories/comedy",
-              "text": "Comedy"
-            },
-            {
-              "to": "categories/entertainment",
-              "text": "Entertainment"
-            },
-            {
-              "to": "categories/factual",
-              "text": "Factual"
-            }
-          ],
-          "secondRowButtons": [
-            {
-              "to": "categories/full-series",
-              "text": "Full Series"
-            },
-            {
-              "to": "categories/news",
-              "text": "News"
-            },
-            {
-              "to": "categories/sport",
-              "text": "Sports"
-            },
-            {
-              "to": "categories/films",
-              "text": "Films"
-            }
-          ]
-        }
-      },
-      "PRIMARY_NAV_CHALLENGER_2_BRITBOX": {
-        "enabled": true,
-        "agent": "a-zBNhi0YASD",
-        "goals": {
-          "PRI_NAV_BRITBOX_CLICK_S": "g-44dRNcl49K",
-          "BRITBOX_PAGE_VIEW_S": "g-eQHBDGmJ1k",
-          "BRITBOX_PAGE_VIEW_M": "g-QOXuU2QTTu",
-          "HUBPLUS_PAGE_VIEW_S": "g-QWyKP8vlLf",
-          "HUBPLUS_SUBSCRIPTION_S": "g-XTdWcf4Wid",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
-      "RECS_VERSIONS": {
-        "enabled": true,
-        "agent": "a-XZfTx25D6X",
-        "goals": {
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "CLICK_RFY_M": "g-2oXWLZiXbz",
-          "CLICK_RFY_S": "g-J1nFSr7VZ8",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY"
-        }
-      },
-      "HOMEPAGE_CHALLENGER2": {
-        "enabled": true,
-        "agent": "a-cZ6RF5SNxo",
-        "goals": {
-          "CLICK_MOST_POP_RAIL_HOME": "g-h4Zv0ZF2in",
-          "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        },
-        "data": {
-          "railTitle": "Trending"
-        }
-      },
-      "PLAYERPAGE_HUBPLUS_PROMO": {
-        "enabled": true,
-        "agent": "a-hamCAIWGdOuO",
-        "goals": {
-          "CLICK_HUBPLUS_S": "g-JQG8jceAct",
-          "HUBPLUS_PAGE_VIEW_S": "g-QWyKP8vlLf",
-          "HUBPLUS_SUBSCRIPTION_S": "g-XTdWcf4Wid",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        },
-        "data": {
-          "ctaCopyA": "Try Hub+",
-          "ctaCopyB": "Watch ad-free*"
-        }
-      },
-      "NAV_CHALLENGER_1": {
-        "enabled": true,
-        "agent": "a-MaW9hRHlbY",
-        "goals": {
-          "VIEW_ANY_CATEGORY_PAGE_M": "g-cRacsGiXZV",
-          "VIEW_FULL_SERIES_CATEGORY_PAGE_S": "g-IBPqCtHTN7",
-          "VIEW_CHILDREN_CATEGORY_PAGE_S": "g-tm7WBUlxeZ",
-          "VIEW_COMEDY_CATEGORY_PAGE_S": "g-Ld5aUGNXMo",
-          "VIEW_DRAMASOAPS_CATEGORY_PAGE_S": "g-YOtUPt3ys8",
-          "VIEW_ENTERTAINMENT_CATEGORY_PAGE_S": "g-RZ0GWQnM8V",
-          "VIEW_FACTUAL_CATEGORY_PAGE_S": "g-A26sNKnSja",
-          "VIEW_FILMS_CATEGORY_PAGE_S": "g-184rve93On",
-          "VIEW_NEWS_CATEGORY_PAGE_S": "g-nfH783jk4Q",
-          "VIEW_SPORT_CATEGORY_PAGE_S": "g-Gyk2nMmko0",
-          "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
-      "CAT_CHALLENGER_TOP_PICKS": {
-        "enabled": true,
-        "agent": "a-jHW9H75XmiI7",
-        "goals": {
-          "CLICK_TOP_PICK_RAIL_S": "g-ivbFwi7YdB",
-          "CLICK_TOP_PICK_RAIL_M": "g-81vbRChogR",
-          "CLICK_PROGRAMME_S": "g-QDvWtOxnWL",
-          "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
-      "RICH_IMAGE_ASSETS": {
-        "enabled": true,
-        "agent": "a-MMIcwI1ExxKS",
-        "goals": {
-          "CLICK_ANY_DRAMASOAP_TILE_M": "g-AfZ7eqS4Ir",
-          "CLICK_ANY_DRAMASOAP_TILE_S": "g-9xmlQ8LMFR",
-          "CLICK_RICH_IMAGE_TILE_M": "g-Lj1lCPPapl",
-          "CLICK_RICH_IMAGE_TILE_S": "g-1vy7Bk6GYY",
-          "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        },
-        "data": {
-          "programmes": [
-            {
-              "programmeId": "2_7844",
-              "title": "Des",
-              "image": "http://hubimages.itv.com/episode/2_7844_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_5041",
-              "title": "The Bay",
-              "image": "http://hubimages.itv.com/episode/2_5041_0012?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "7_0127",
-              "title": "Finding Alice",
-              "image": "http://hubimages.itv.com/episode/7_0127_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_4269",
-              "title": "Marcella",
-              "image": "http://hubimages.itv.com/episode/2_4269_0025?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_6732",
-              "title": "The Pembrokeshire Murders",
-              "image": "http://hubimages.itv.com/episode/2_6732_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_7595",
-              "title": "The Sister",
-              "image": "http://hubimages.itv.com/episode/2_7595_0004?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_7534",
-              "title": "Honour",
-              "image": "http://hubimages.itv.com/episode/2_7534_0002?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_7035",
-              "title": "The Singapore Grip",
-              "image": "http://hubimages.itv.com/episode/2_7035_0006?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            },
-            {
-              "programmeId": "2_3958",
-              "title": "Tina & Bobby",
-              "image": "http://hubimages.itv.com/episode/2_3958_0003?w={width}&h={height}&q={quality}&blur={blur}&bg={bg}"
-            }
-          ]
-        }
-      },
       "ONWARD_JOURNEY_RECOMMENDATION": {
         "enabled": true,
         "agent": "a-qBXMXdBHF4KG",
@@ -399,26 +141,8 @@
           "PLAY_CONTENT_M": "g-torwoFBuUz"
         }
       },
-      "HOME_PORTRAIT_SLIDER": {
-        "enabled": true,
-        "agent": "a-uBCoXP0NRkDY",
-        "goals": {
-          "CLICK_ANY_HOMEPAGE_SLIDER_S": "g-48G0vRw2Ix",
-          "CLICK_ANY_HOMEPAGE_SLIDER_M": "g-qzGACUWC3l",
-          "CLICK_TOP_PICKS_SLIDER_S": "g-ytR59HqPLj",
-          "CLICK_TOP_PICKS_SLIDER_M": "g-uJpPiiAPPR",
-          "VIEW_PROGRAMME_PAGE": "g-RUjRhGCVep",
-          "VIEW_SEARCH_RESULTS": "g-vxBOKrAplk",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
       "HOME_HERO": {
-        "enabled": true,
+        "enabled": false,
         "agent": "a-cWpNZwPcYc",
         "goals": {
           "CLICK_HERO_TILE_S": "g-rYHpu7p2nN",
@@ -430,6 +154,29 @@
           "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
           "PLAY_CONTENT_S": "g-NpdUuFi6oX",
           "PLAY_CONTENT_M": "g-torwoFBuUz"
+        }
+      },
+      "HOME_BYW_AWS": {
+        "enabled": true,
+        "agent": "a-eOaeCygPQAZn",
+        "goals": {
+          "CLICK_BYW_SLIDER_S": "g-NFqDlpKtPS",
+          "CLICK_BYW_SLIDER_M": "g-g5CehvRiCP",
+          "CLICK_ANY_HOMEPAGE_SLIDER_S": "g-48G0vRw2Ix",
+          "CLICK_ANY_HOMEPAGE_SLIDER_M": "g-qzGACUWC3l",
+          "VIEW_PROGRAMME_PAGE_S": "g-RUjRhGCVep",
+          "VIEW_PROGRAMME_PAGE_M": "g-0vtiu0plZ1",
+          "PLAY_VOD_S": "g-tzxd1GYTTU",
+          "PLAY_VOD_M": "g-kzaU8bLbLd",
+          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
+          "PLAY_CONTENT_M": "g-torwoFBuUz",
+          "CONDITIONAL_VIEW_PROGRAMME_PAGE_S": "g-o3PtS4PZAy",
+          "CONDITIONAL_VIEW_PROGRAMME_PAGE_M": "g-n2PwXyhVO9",
+          "CONDITIONAL_PLAY_VOD_S": "g-oUKjLwO27r",
+          "CONDITIONAL_PLAY_VOD_M": "g-ADKEJq1hB3",
+          "CONDITIONAL_PLAY_CONTENT_S": "g-HZ5C3Q4BgV",
+          "CONDITIONAL_PLAY_CONTENT_M": "g-Upa2xrU76x",
+          "CONDITIONAL_RESET": "g-EWmwh70dv9"
         }
       }
     }
