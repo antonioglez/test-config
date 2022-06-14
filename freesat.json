@@ -1,7 +1,7 @@
 {
   "deviceGroup": "freeview",
   "variantFeatures": [
-    "dvb-dash",
+    "mpeg-dash",
     "outband-webvtt",
     "playready",
     "progressive"
