@@ -1,11 +1,6 @@
 {
   "deviceGroup": "freeview",
-  "variantFeatures": [
-    "dvb-dash",
-    "outband-webvtt",
-    "playready",
-    "progressive"
-  ],
+  "variantFeatures": ["dvb-dash", "outband-webvtt", "playready", "progressive"],
   "modules": [
     "home",
     "categories",
@@ -29,6 +24,63 @@
     "recommendations": "https://recommendations.prd.user.itv.com"
   },
   "features": {
+    "playerEngine": {
+      "vod": "xdk",
+      "sim": "xdk"
+    },
+    "simulcast": {
+      "enabled": true,
+      "options": {
+        "disableDai": true,
+        "playlistOverride": {
+          "enabled": true,
+          "channels": [
+            {
+              "channel": "itv",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": false
+            },
+            {
+              "channel": "itv2",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": false
+            },
+            {
+              "channel": "itvbe",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": false
+            },
+            {
+              "channel": "itv3",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": false
+            },
+            {
+              "channel": "itv4",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": false
+            },
+            {
+              "channel": "citv",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk",
+              "startAgainEnabled": false
+            }
+          ]
+        }
+      }
+    },
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
