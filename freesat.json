@@ -13,15 +13,16 @@
     "profiles"
   ],
   "services": {
-    "promoted": "http://promoted.hubsvc.itv.com",
-    "discovery": "http://discovery.hubsvc.itv.com",
-    "static": "http://static.10ft.itv.com",
-    "regionalisation": "http://regionalisation.prd.user.itv.com",
+    "promoted": "https://promoted.hubsvc.itv.com",
+    "discovery": "https://discovery.hubsvc.itv.com",
+    "static": "https://static.10ft.itv.com",
+    "regionalisation": "https://regionalisation.prd.user.itv.com",
     "contentInventory": "https://content-inventory.prd.oasvc.itv.com",
     "textSearch": "https://textsearch.prd.oasvc.itv.com",
     "content": "https://content.prd.user.itv.com",
     "myList": "https://my-list.prd.user.itv.com",
-    "recommendations": "https://recommendations.prd.user.itv.com"
+    "recommendations": "https://recommendations.prd.user.itv.com",
+    "nowNext": "https://nownext.oasvc.itv.com"
   },
   "features": {
     "playerEngine": {
@@ -120,9 +121,9 @@
     "animations": false
   },
   "resources": {
-    "cookiePolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
-    "privacyPolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
-    "terms": "http://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/terms-gdpr.html"
+    "cookiePolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
+    "privacyPolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
+    "terms": "https://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/terms-gdpr.html"
   },
   "tracking": {
     "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
@@ -189,21 +190,6 @@
           "PLAY_CONTENT_M": "g-torwoFBuUz"
         }
       },
-      "HOME_HERO": {
-        "enabled": false,
-        "agent": "a-cWpNZwPcYc",
-        "goals": {
-          "CLICK_HERO_TILE_S": "g-rYHpu7p2nN",
-          "CLICK_HERO_TILE_M": "g-i5ykeReXRj",
-          "VIEW_PROGRAMME_PAGE": "g-RUjRhGCVep",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
       "HOME_BYW_AWS": {
         "enabled": true,
         "agent": "a-eOaeCygPQAZn",
@@ -224,6 +210,27 @@
           "CONDITIONAL_PLAY_VOD_M": "g-ADKEJq1hB3",
           "CONDITIONAL_PLAY_CONTENT_S": "g-HZ5C3Q4BgV",
           "CONDITIONAL_PLAY_CONTENT_M": "g-Upa2xrU76x",
+          "CONDITIONAL_RESET": "g-EWmwh70dv9"
+        }
+      },
+      "EPISODE_OWJ_RECS_AWS": {
+        "enabled": true,
+        "agent": "a-76tPRKH2Xn",
+        "goals": {
+          "CLICK_OWJ_RECS_SLIDER_S": "g-YjZ1LmKOal",
+          "CLICK_OWJ_RECS_SLIDER_M": "g-qKzhwNVHEY",
+          "VIEW_PROGRAMME_PAGE_S": "g-RUjRhGCVep",
+          "VIEW_PROGRAMME_PAGE_M": "g-0vtiu0plZ1",
+          "PLAY_VOD_S": "g-tzxd1GYTTU",
+          "PLAY_VOD_M": "g-kzaU8bLbLd",
+          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
+          "PLAY_CONTENT_M": "g-torwoFBuUz",
+          "CONDITIONAL_VIEW_PROGRAMME_PAGE_S": "g-0zqMb4yEBx",
+          "CONDITIONAL_VIEW_PROGRAMME_PAGE_M": "g-cQoIWHkF7c",
+          "CONDITIONAL_PLAY_VOD_S": "g-DSx0ZiP8us",
+          "CONDITIONAL_PLAY_VOD_M": "g-nh45z3wObc",
+          "CONDITIONAL_PLAY_CONTENT_S": "g-43zpE7rcVY",
+          "CONDITIONAL_PLAY_CONTENT_M": "g-1blWomHqQ7",
           "CONDITIONAL_RESET": "g-EWmwh70dv9"
         }
       }
