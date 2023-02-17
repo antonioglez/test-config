@@ -11,12 +11,12 @@
     "home",
     "categories",
     "sign-in",
-    "channels",
-    "hub-plus",
     "search",
+    "channels",
     "britbox",
     "collections",
-    "profiles"
+    "films",
+    "premium"
   ],
   "services": {
     "promoted": "https://promoted.hubsvc.itv.com",
@@ -31,25 +31,78 @@
     "nowNext": "https://nownext.oasvc.itv.com"
   },
   "features": {
-    "emailVerificationStandardUser": true,
-    "britbox": {
+    "playerEngine": { "vod": "xdk", "sim": "xdk" },
+    "simulcast": {
       "enabled": true,
       "options": {
-        "pageType": "notSupported"
+        "playlistOverride": {
+          "enabled": true,
+          "channels": [
+            {
+              "channel": "itv",
+              "channelType": "simulcast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            },
+            {
+              "channel": "itvbe",
+              "channelType": "simulcast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            },
+            {
+              "channel": "itv2",
+              "channelType": "simulcast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            },
+            {
+              "channel": "itv3",
+              "channelType": "simulcast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            },
+            {
+              "channel": "itv4",
+              "channelType": "simulcast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            },
+            {
+              "channel": "citv",
+              "channelType": "simulcast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            },
+            {
+              "channelType": "fast",
+              "featureSet": ["dvb-dash", "playready"],
+              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+              "playerEngine": "xdk"
+            }
+          ]
+        }
       }
     },
+    "emailVerificationStandardUser": false,
+    "britbox": { "enabled": true, "options": { "pageType": "notSupported" } },
     "myList": true,
+    "myListPage": false,
+    "continueWatching": true,
     "recommendations": true,
     "curatedTileImages": true,
-    "becauseYouWatched": true,
+    "becauseYouWatched": false,
     "onwardJourney": true,
-    "hubPlusUpsellReskin": true,
     "textSearch": true,
     "targetedContainers": {
       "enabled": true,
-      "featured": {
-        "featuredSliderSlot1": true
-      },
+      "featured": { "featuredSliderSlot1": true },
       "promoted": {
         "promotedProductionsSliderSlot4": true,
         "promotedProductionsSliderSlot2": true,
@@ -63,127 +116,52 @@
         "genreSliderSlot3": true
       }
     },
-    "collectionsNavIcon": false
+    "collectionsNavIcon": false,
+    "suppressSponsorship": true,
+    "newsShortform": false,
+    "mostPopular": true,
+    "regionalisation": true
   },
   "profile": {
-    "animations": false
+    "animations": false,
+    "dPadTrickPlay": false,
+    "enableHeroAutorotation": false,
+    "limitEditorialRailsTo": 9,
+    "limitEditorialTilesPerRailTo": 5,
+    "limitEditorialHeroTo": 1
   },
   "resources": {
     "cookiePolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
     "privacyPolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
-    "terms": "https://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/terms-gdpr.html",
+    "terms": "https://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/cassandra/terms-gdpr-itvx.html",
     "linear": "https://app.10ft.itv.com/itvstatic/assets/legal/linear/connected-tv/linear.html"
   },
   "tracking": {
     "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
     "cpt": "https://cpt.itv.com/0.0.1/event",
     "pes": "https://secure.pes.itv.com/1.1.3/event",
-    "conviva": {
-      "enabled": false
-    },
-    "ga": {
-      "token": "UA-17825253-118"
-    },
-    "gtm": {
-      "token": "GTM-52XV8MF"
-    },
-    "ace": {
-      "url": "https://secure.pes.itv.com/ace/0.1.1/event"
-    },
+    "conviva": { "enabled": false },
+    "ga": { "token": "UA-17825253-118" },
+    "gtm": { "token": "GTM-52XV8MF" },
+    "ace": { "url": "https://secure.pes.itv.com/ace/0.1.1/event" },
     "ad": "https://adid.bde.itv.com/0.0.1/event"
   },
+  "vast": {
+    "mediaFilter": [
+      { "id": "CDN1_TS_H.264_MAIN", "bitrate": "1250" },
+      { "id": "TS_H.264_MAIN", "bitrate": "1250" }
+    ]
+  },
   "options": {
+    "nowNext": { "pollingInterval": 900000, "timeout": 30 },
     "hubPlus": {
       "upgradeUrl": "www.itv.com/upgrade",
       "qrCode": "hubplus-subscribe.png"
+    },
+    "premium": {
+      "upgradeUrl": "www.itv.com/youview/subscribe",
+      "qrCode": "premium-youview-subscribe.png"
     }
   },
-  "abTest": {
-    "endpoint": "https://api-itv-hub.conductrics.com/ac-WIaPLGnSvP/v3/agent-api/dt-VFMNUpcZWuF83rpodyGCKhul2Kh8Aw?apikey=api-VrgFgnXzcMQtgNTBTInu",
-    "list": {
-      "ONWARD_JOURNEY_RECOMMENDATION": {
-        "enabled": true,
-        "agent": "a-qBXMXdBHF4KG",
-        "goals": {
-          "CLICK_RECOMMENDED_S": "g-qS8jUIJ4M0",
-          "CLICK_RECOMMENDED_M": "g-qhxXBliNp9",
-          "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
-          "HUBPLUS_PAGE_VIEW_S": "g-QWyKP8vlLf",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
-      "HOME_TOP4_RAILS": {
-        "enabled": true,
-        "agent": "a-JZSjlzEdyvHA",
-        "goals": {
-          "CLICK_ANY_HOMEPAGE_RAIL_S": "g-48G0vRw2Ix",
-          "CLICK_ANY_HOMEPAGE_RAIL_M": "g-qzGACUWC3l",
-          "CLICK_TOP_PICKS_RAIL_S": "g-ytR59HqPLj",
-          "CLICK_TOP_PICKS_RAIL_M": "g-uJpPiiAPPR",
-          "CLICK_MOST_POP_RAIL_S": "g-w5AZX1taDH",
-          "CLICK_MOST_POP_RAIL_M": "g-S1tcqWdEsW",
-          "CLICK_RECOMMENDED_RAIL_S": "g-lBWXXziaDG",
-          "CLICK_RECOMMENDED_RAIL_M": "g-UK5M0UdvNZ",
-          "CLICK_CONTINUE_WATCHING_RAIL_S": "g-YT15S0h460",
-          "CLICK_CONTINUE_WATCHING_RAIL_M": "g-2hse0LeBNE",
-          "VIEW_PROGRAM_PAGE": "g-RUjRhGCVep",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_SIMULCAST_S": "g-x9NqjE5WX0",
-          "PLAY_SIMULCAST_M": "g-TDzkWKVGSY",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz"
-        }
-      },
-      "HOME_BYW_AWS": {
-        "enabled": true,
-        "agent": "a-eOaeCygPQAZn",
-        "goals": {
-          "CLICK_BYW_SLIDER_S": "g-NFqDlpKtPS",
-          "CLICK_BYW_SLIDER_M": "g-g5CehvRiCP",
-          "CLICK_ANY_HOMEPAGE_SLIDER_S": "g-48G0vRw2Ix",
-          "CLICK_ANY_HOMEPAGE_SLIDER_M": "g-qzGACUWC3l",
-          "VIEW_PROGRAMME_PAGE_S": "g-RUjRhGCVep",
-          "VIEW_PROGRAMME_PAGE_M": "g-0vtiu0plZ1",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz",
-          "CONDITIONAL_VIEW_PROGRAMME_PAGE_S": "g-o3PtS4PZAy",
-          "CONDITIONAL_VIEW_PROGRAMME_PAGE_M": "g-n2PwXyhVO9",
-          "CONDITIONAL_PLAY_VOD_S": "g-oUKjLwO27r",
-          "CONDITIONAL_PLAY_VOD_M": "g-ADKEJq1hB3",
-          "CONDITIONAL_PLAY_CONTENT_S": "g-HZ5C3Q4BgV",
-          "CONDITIONAL_PLAY_CONTENT_M": "g-Upa2xrU76x",
-          "CONDITIONAL_RESET": "g-EWmwh70dv9"
-        }
-      },
-      "EPISODE_OWJ_RECS_AWS": {
-        "enabled": true,
-        "agent": "a-76tPRKH2Xn",
-        "goals": {
-          "CLICK_OWJ_RECS_SLIDER_S": "g-YjZ1LmKOal",
-          "CLICK_OWJ_RECS_SLIDER_M": "g-qKzhwNVHEY",
-          "VIEW_PROGRAMME_PAGE_S": "g-RUjRhGCVep",
-          "VIEW_PROGRAMME_PAGE_M": "g-0vtiu0plZ1",
-          "PLAY_VOD_S": "g-tzxd1GYTTU",
-          "PLAY_VOD_M": "g-kzaU8bLbLd",
-          "PLAY_CONTENT_S": "g-NpdUuFi6oX",
-          "PLAY_CONTENT_M": "g-torwoFBuUz",
-          "CONDITIONAL_VIEW_PROGRAMME_PAGE_S": "g-0zqMb4yEBx",
-          "CONDITIONAL_VIEW_PROGRAMME_PAGE_M": "g-cQoIWHkF7c",
-          "CONDITIONAL_PLAY_VOD_S": "g-DSx0ZiP8us",
-          "CONDITIONAL_PLAY_VOD_M": "g-nh45z3wObc",
-          "CONDITIONAL_PLAY_CONTENT_S": "g-43zpE7rcVY",
-          "CONDITIONAL_PLAY_CONTENT_M": "g-1blWomHqQ7",
-          "CONDITIONAL_RESET": "g-EWmwh70dv9"
-        }
-      }
-    }
-  }
+  "abTest": {}
 }
