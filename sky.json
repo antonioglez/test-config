@@ -168,12 +168,12 @@
     "regionalisation": true
   },
   "profile": {
-    "animations": false,
+    "animations": true,
     "dPadTrickPlay": true,
-    "enableHeroAutorotation": false,
-    "limitEditorialRailsTo": 0,
-    "limitEditorialTilesPerRailTo": 5,
-    "limitEditorialHeroTo": 1
+    "enableHeroAutorotation": true,
+    "limitEditorialRailsTo": 19,
+    "limitEditorialTilesPerRailTo": 12,
+    "limitEditorialHeroTo": 5
   },
   "resources": {
     "cookiePolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
