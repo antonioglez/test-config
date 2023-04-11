@@ -5,24 +5,27 @@
     "playready",
     "progressive",
     "persistent",
-    "outband-webvtt"
+    "outband-webvtt",
+    "inband-audio-description"
   ],
   "modules": [
     "home",
     "categories",
     "sign-in",
     "search",
-    "channels",
     "britbox",
     "collections",
+    "profiles",
     "films",
-    "premium"
+    "premium",
+    "mylist",
+    "kids-atoz"
   ],
   "services": {
-    "promoted": "https://promoted.hubsvc.itv.com",
-    "discovery": "https://discovery.hubsvc.itv.com",
-    "static": "https://static.10ft.itv.com",
-    "regionalisation": "https://regionalisation.prd.user.itv.com",
+    "promoted": "http://promoted.hubsvc.itv.com",
+    "discovery": "http://discovery.hubsvc.itv.com",
+    "static": "http://static.10ft.itv.com",
+    "regionalisation": "http://regionalisation.prd.user.itv.com",
     "contentInventory": "https://content-inventory.prd.oasvc.itv.com",
     "textSearch": "https://textsearch.prd.oasvc.itv.com",
     "content": "https://content.prd.user.itv.com",
@@ -31,69 +34,15 @@
     "nowNext": "https://nownext.oasvc.itv.com"
   },
   "features": {
-    "playerEngine": { "vod": "xdk", "sim": "xdk" },
-    "simulcast": {
+    "emailVerificationStandardUser": true,
+    "britbox": {
       "enabled": true,
       "options": {
-        "playlistOverride": {
-          "enabled": true,
-          "channels": [
-            {
-              "channel": "itv",
-              "channelType": "simulcast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            },
-            {
-              "channel": "itvbe",
-              "channelType": "simulcast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            },
-            {
-              "channel": "itv2",
-              "channelType": "simulcast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            },
-            {
-              "channel": "itv3",
-              "channelType": "simulcast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            },
-            {
-              "channel": "itv4",
-              "channelType": "simulcast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            },
-            {
-              "channel": "citv",
-              "channelType": "simulcast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            },
-            {
-              "channelType": "fast",
-              "featureSet": ["dvb-dash", "playready"],
-              "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
-              "playerEngine": "xdk"
-            }
-          ]
-        }
+        "pageType": "notSupported"
       }
     },
-    "emailVerificationStandardUser": false,
-    "britbox": { "enabled": true, "options": { "pageType": "notSupported" } },
     "myList": true,
-    "myListPage": false,
+    "myListPage": true,
     "continueWatching": true,
     "recommendations": true,
     "curatedTileImages": true,
@@ -102,7 +51,9 @@
     "textSearch": true,
     "targetedContainers": {
       "enabled": true,
-      "featured": { "featuredSliderSlot1": true },
+      "featured": {
+        "featuredSliderSlot1": true
+      },
       "promoted": {
         "promotedProductionsSliderSlot4": true,
         "promotedProductionsSliderSlot2": true,
@@ -119,41 +70,64 @@
     "collectionsNavIcon": false,
     "suppressSponsorship": true,
     "newsShortform": false,
+    "newsCategoryPage": false,
     "mostPopular": true,
-    "regionalisation": true
+    "regionalisation": true,
+    "kidsExperience": false,
+    "SVODExperience": false
   },
   "profile": {
     "animations": false,
     "dPadTrickPlay": false,
     "enableHeroAutorotation": false,
-    "limitEditorialRailsTo": 9,
-    "limitEditorialTilesPerRailTo": 5,
-    "limitEditorialHeroTo": 1
+    "limitEditorialRailsTo": "base",
+    "limitEditorialTilesPerRailTo": "base",
+    "limitEditorialHeroTo": "base"
   },
   "resources": {
-    "cookiePolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
-    "privacyPolicy": "https://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
-    "terms": "https://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/cassandra/terms-gdpr-itvx.html",
-    "linear": "https://app.10ft.itv.com/itvstatic/assets/legal/linear/connected-tv/linear.html"
+    "cookiePolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
+    "privacyPolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/privacy/connected-tv/privacy-gdpr.html",
+    "terms": "http://app.10ft.itv.com/itvstatic/assets/legal/terms/connected-tv/cassandra/terms-gdpr-itvx.html",
+    "linear": "http://app.10ft.itv.com/itvstatic/assets/legal/linear/connected-tv/linear.html"
   },
   "tracking": {
     "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
     "cpt": "https://cpt.itv.com/0.0.1/event",
     "pes": "https://secure.pes.itv.com/1.1.3/event",
-    "conviva": { "enabled": false },
-    "ga": { "token": "UA-17825253-118" },
-    "gtm": { "token": "GTM-52XV8MF" },
-    "ace": { "url": "https://secure.pes.itv.com/ace/0.1.1/event" },
+    "conviva": {
+      "enabled": false
+    },
+    "ga": {
+      "token": "UA-17825253-118"
+    },
+    "gtm": {
+      "token": "GTM-52XV8MF"
+    },
+    "ace": {
+      "url": "https://secure.pes.itv.com/ace/0.1.1/event"
+    },
     "ad": "https://adid.bde.itv.com/0.0.1/event"
   },
   "vast": {
     "mediaFilter": [
-      { "id": "CDN1_TS_H.264_MAIN", "bitrate": "1250" },
-      { "id": "TS_H.264_MAIN", "bitrate": "1250" }
+      {
+        "id": "CDN1_TS_H.264_MAIN",
+        "bitrate": "1250"
+      },
+      {
+        "id": "TS_H.264_MAIN",
+        "bitrate": "1250"
+      },
+      {
+        "id": "TS_H.264_MAIN",
+        "bitrate": "4500"
+      }
     ]
   },
   "options": {
-    "nowNext": { "pollingInterval": 900000, "timeout": 30 },
+    "nowNext": {
+      "pollingInterval": 900000
+    },
     "hubPlus": {
       "upgradeUrl": "www.itv.com/upgrade",
       "qrCode": "hubplus-subscribe.png"
