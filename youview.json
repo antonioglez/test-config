@@ -34,6 +34,7 @@
     "nowNext": "https://nownext.oasvc.itv.com"
   },
   "features": {
+    "amplitude": false,
     "emailVerificationStandardUser": true,
     "britbox": {
       "enabled": true,
@@ -70,19 +71,26 @@
     "collectionsNavIcon": false,
     "suppressSponsorship": true,
     "newsShortform": false,
+    "sportShortform": false,
     "newsCategoryPage": false,
     "mostPopular": true,
     "regionalisation": true,
-    "kidsExperience": false,
-    "SVODExperience": false
+    "kidsExperience": true,
+    "SVODExperience": true,
+    "liveRecommendations": false,
+    "regionalisationExperience": false,
+    "searchExperience": false,
+    "searchLinear": false
   },
   "profile": {
     "animations": false,
     "dPadTrickPlay": false,
     "enableHeroAutorotation": false,
-    "limitEditorialRailsTo": "base",
-    "limitEditorialTilesPerRailTo": "base",
-    "limitEditorialHeroTo": "base"
+    "limitEditorialRailsTo": "low-end",
+    "limitEditorialTilesPerRailTo": "low-end",
+    "limitEditorialHeroTo": "low-end",
+    "skipIntro": false,
+    "enableGTM": true
   },
   "resources": {
     "cookiePolicy": "http://app.10ft.itv.com/itvstatic/assets/legal/cookies/connected-tv/cookies.html",
@@ -95,7 +103,13 @@
     "cpt": "https://cpt.itv.com/0.0.1/event",
     "pes": "https://secure.pes.itv.com/1.1.3/event",
     "conviva": {
-      "enabled": false
+      "enabled": true,
+      "test": {
+        "customerKey": "614f017665482d18dee1e746f4ad7140a2ca4eaa"
+      },
+      "prod": {
+        "customerKey": "822d428ad6a0a99e585ae79b04746ccfc541cad1"
+      }
     },
     "ga": {
       "token": "UA-17825253-118"
@@ -133,9 +147,104 @@
       "qrCode": "hubplus-subscribe.png"
     },
     "premium": {
+      "paymentJourney": true,
       "upgradeUrl": "www.itv.com/youview/subscribe",
       "qrCode": "premium-youview-subscribe.png"
+    },
+    "regionalisation": {
+      "postcodeCaptureTrigger": 1688169600000,
+      "regionalSimulcast": false
     }
   },
-  "abTest": {}
+  "abTest": {},
+  "regions": {
+    "london": {
+      "region": "london",
+      "broadcaster": "ITV"
+    },
+    "meridian_east": {
+      "region": "meridian_east",
+      "broadcaster": "ITV"
+    },
+    "meridian_south_coast": {
+      "region": "meridian_east",
+      "broadcaster": "ITV"
+    },
+    "meridian_thames_valley": {
+      "region": "meridian_east",
+      "broadcaster": "ITV"
+    },
+    "channel_islands": {
+      "region": "meridian_east",
+      "broadcaster": "ITV"
+    },
+    "anglia_east": {
+      "region": "meridian_east",
+      "broadcaster": "ITV"
+    },
+    "anglia_west": {
+      "region": "meridian_east",
+      "broadcaster": "ITV"
+    },
+    "central_west": {
+      "region": "central_west",
+      "broadcaster": "ITV"
+    },
+    "central_east": {
+      "region": "central_west",
+      "broadcaster": "ITV"
+    },
+    "west": {
+      "region": "central_west",
+      "broadcaster": "ITV"
+    },
+    "west_country": {
+      "region": "central_west",
+      "broadcaster": "ITV"
+    },
+    "wales": {
+      "region": "wales",
+      "broadcaster": "ITV"
+    },
+    "granada": {
+      "region": "granada",
+      "broadcaster": "ITV"
+    },
+    "border_england": {
+      "region": "granada",
+      "broadcaster": "ITV"
+    },
+    "border_scotland": {
+      "region": "granada",
+      "broadcaster": "ITV"
+    },
+    "tyne_tees": {
+      "region": "granada",
+      "broadcaster": "ITV"
+    },
+    "emley_moor": {
+      "region": "granada",
+      "broadcaster": "ITV"
+    },
+    "belmont": {
+      "region": "granada",
+      "broadcaster": "ITV"
+    },
+    "ulster": {
+      "region": "ulster",
+      "broadcaster": "ITV"
+    },
+    "stv_central": {
+      "region": "stv_central",
+      "broadcaster": "STV"
+    },
+    "stv_north": {
+      "region": "stv_north",
+      "broadcaster": "STV"
+    },
+    "default": {
+      "region": "london",
+      "broadcaster": "unknown"
+    }
+  }
 }
