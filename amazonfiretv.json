@@ -1,0 +1,316 @@
+{
+    "deviceGroup": "amazonfiretv",
+    "variantFeatures": [
+        "hls",
+        "aes",
+        "progressive",
+        "inband-webvtt"
+    ],
+    "modules": [
+        "home",
+        "categories",
+        "sign-in",
+        "channels",
+        "search",
+        "britbox",
+        "collections",
+        "profiles",
+        "films",
+        "premium",
+        "mylist",
+        "kids-atoz"
+    ],
+    "services": {
+        "promoted": "http://promoted.hubsvc.itv.com",
+        "discovery": "http://discovery.hubsvc.itv.com",
+        "static": "http://static.10ft.itv.com",
+        "regionalisation": "http://regionalisation.prd.user.itv.com",
+        "contentInventory": "https://content-inventory.prd.oasvc.itv.com",
+        "textSearch": "https://textsearch.prd.oasvc.itv.com",
+        "content": "https://content.prd.user.itv.com",
+        "myList": "https://my-list.prd.user.itv.com",
+        "recommendations": "https://recommendations.prd.user.itv.com",
+        "nowNext": "https://nownext.oasvc.itv.com"
+    },
+    "features": {
+        "amplitude": true,
+        "emailVerificationStandardUser": true,
+        "britbox": {
+            "enabled": true,
+            "options": {
+                "pageType": "supported"
+            }
+        },
+        "myList": true,
+        "myListPage": true,
+        "continueWatching": true,
+        "recommendations": true,
+        "curatedTileImages": true,
+        "becauseYouWatched": false,
+        "onwardJourney": true,
+        "amazonInAppPurchase": true,
+        "profilesManagement": true,
+        "textSearch": true,
+        "targetedContainers": {
+            "enabled": true,
+            "featured": {
+                "featuredSliderSlot1": true
+            },
+            "promoted": {
+                "promotedProductionsSliderSlot4": true,
+                "promotedProductionsSliderSlot2": true,
+                "promotedProductionsSliderSlot3": true,
+                "promotedProductionsSliderSlot1": true
+            },
+            "genreSliders": {
+                "genreSliderSlot1": true,
+                "genreSliderSlot2": true,
+                "genreSliderSlot4": true,
+                "genreSliderSlot3": true
+            }
+        },
+        "collectionsNavIcon": false,
+        "suppressSponsorship": true,
+        "newsShortform": true,
+        "sportShortform": false,
+        "newsCategoryPage": true,
+        "mostPopular": true,
+        "regionalisation": true,
+        "SVODExperience": true,
+        "liveRecommendations": false,
+        "searchExperience": true,
+        "searchLinear": true,
+        "postcodeCapture": false,
+        "regionalSimulcast": false,
+        "enablePlayerError3016": true,
+        "multiChoiceSignIn": false,
+        "regionalNews": false,
+        "enhancedCategories": false,
+        "enabledVodErrors": [],
+        "enabledPlayerErrors": [
+            "1003_X",
+            "3016_S",
+            "6001_S",
+            "6006_S"
+        ],
+        "adsOnPause": false
+    },
+    "profile": {
+        "animations": false,
+        "dPadTrickPlay": true,
+        "enableHeroAutorotation": false,
+        "limitEditorialRailsTo": "base",
+        "limitEditorialTilesPerRailTo": "low-end",
+        "limitEditorialHeroTo": "low-end",
+        "limitProgressIndicatorTo": "low-end",
+        "limitLoadingAssetTo": "low-end",
+        "skipIntro": true,
+        "enableGTM": true
+    },
+    "resources": {
+        "cookiePolicy": "http://assets.fe.itv.com/legal/cookies/connected-tv/cookies.html",
+        "privacyPolicy": "http://assets.fe.itv.com/legal/privacy/connected-tv/privacy-gdpr.html",
+        "terms": "http://assets.fe.itv.com/legal/terms/connected-tv/cassandra/terms-gdpr-itvx.html"
+    },
+    "tracking": {
+        "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
+        "cpt": "https://cpt.itv.com/0.0.1/event",
+        "pes": "https://secure.pes.itv.com/1.1.3/event",
+        "conviva": {
+            "enabled": true,
+            "test": {
+                "customerKey": "614f017665482d18dee1e746f4ad7140a2ca4eaa"
+            },
+            "prod": {
+                "customerKey": "822d428ad6a0a99e585ae79b04746ccfc541cad1"
+            }
+        },
+        "ga": {
+            "token": "UA-17825253-118"
+        },
+        "gtm": {
+            "token": "GTM-52XV8MF"
+        },
+        "ace": {
+            "url": "https://secure.pes.itv.com/ace/0.1.1/event"
+        }
+    },
+    "vast": {
+        "mediaFilter": [
+            {
+                "id": "MP4_H.264_MAIN",
+                "bitrate": "800"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "800"
+            },
+            {
+                "id": "CDN1_MP4_H.264_MAIN",
+                "bitrate": "1200"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "1200"
+            },
+            {
+                "id": "CDN1_MP4_H.264_MAIN",
+                "bitrate": "1500"
+            },
+            {
+                "id": "CDN1_MP4_H.264_MAIN",
+                "bitrate": "1800"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "1800"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "2400"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "3500"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "5400"
+            },
+            {
+                "id": "MP4_H.264_MAIN_CTV",
+                "bitrate": "6500"
+            }
+        ]
+    },
+    "options": {
+        "watchLive": {
+            "refreshInterval": 60000
+        },
+        "nowNext": {
+            "pollingInterval": 540000
+        },
+        "hubPlus": {
+            "upgradeUrl": "www.itv.com/upgrade",
+            "qrCode": "hubplus-subscribe.png"
+        },
+        "premium": {
+            "paymentJourney": true,
+            "upgradeUrl": "www.itv.com/upgrade",
+            "qrCode": "premium-amazonfiretv-subscribe.png",
+            "apkMinimumVersion": 900000020
+        },
+        "regionalisation": {
+            "postcodeCaptureTrigger": 1696809600000
+        }
+    },
+    "regions": {
+        "london": {
+            "region": "london",
+            "broadcaster": "ITV",
+            "newsRegion": "LONDON"
+        },
+        "meridian_east": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "MERIDIAN"
+        },
+        "meridian_south_coast": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "MERIDIAN"
+        },
+        "meridian_thames_valley": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "MERIDIAN"
+        },
+        "channel_islands": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "CHANNEL"
+        },
+        "anglia_east": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "ANGLIA"
+        },
+        "anglia_west": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "ANGLIA"
+        },
+        "central_west": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "CENTRAL"
+        },
+        "central_east": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "CENTRAL"
+        },
+        "west": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "WESTCOUNTRY"
+        },
+        "west_country": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "WESTCOUNTRY"
+        },
+        "wales": {
+            "region": "wales",
+            "broadcaster": "ITV",
+            "newsRegion": "WALES"
+        },
+        "granada": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "GRANADA"
+        },
+        "border_england": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "BORDER"
+        },
+        "border_scotland": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "BORDER"
+        },
+        "tyne_tees": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "TYNETEES"
+        },
+        "emley_moor": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "CALENDAR"
+        },
+        "belmont": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "CALENDAR"
+        },
+        "ulster": {
+            "region": "ulster",
+            "broadcaster": "ITV",
+            "newsRegion": "UTV"
+        },
+        "stv_central": {
+            "region": "stv_central",
+            "broadcaster": "STV"
+        },
+        "stv_north": {
+            "region": "stv_north",
+            "broadcaster": "STV"
+        },
+        "default": {
+            "region": "london",
+            "broadcaster": "unknown"
+        }
+    }
+}
