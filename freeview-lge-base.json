@@ -1,0 +1,356 @@
+{
+    "deviceGroup": "freeview",
+    "variantFeatures": [
+        "dvb-dash",
+        "outband-webvtt",
+        "playready",
+        "progressive",
+        "hd",
+        "single-track"
+    ],
+    "modules": [
+        "home",
+        "categories",
+        "sign-in",
+        "channels",
+        "search",
+        "britbox",
+        "collections",
+        "profiles",
+        "films",
+        "premium",
+        "mylist",
+        "kids-atoz"
+    ],
+    "services": {
+        "promoted": "https://promoted.hubsvc.itv.com",
+        "discovery": "https://discovery.hubsvc.itv.com",
+        "static": "https://static.10ft.itv.com",
+        "regionalisation": "https://regionalisation.prd.user.itv.com",
+        "contentInventory": "https://content-inventory.prd.oasvc.itv.com",
+        "textSearch": "https://textsearch.prd.oasvc.itv.com",
+        "content": "https://content.prd.user.itv.com",
+        "myList": "https://my-list.prd.user.itv.com",
+        "recommendations": "https://recommendations.prd.user.itv.com",
+        "nowNext": "https://nownext.oasvc.itv.com"
+    },
+    "features": {
+        "playerOptions": {
+            "overrideDRMLicenseUrl": true
+        },
+        "amplitude": false,
+        "simulcast": {
+            "enabled": true,
+            "options": {
+                "playlistOverride": {
+                    "enabled": true,
+                    "channels": [
+                        {
+                            "channel": "itv",
+                            "channelType": "simulcast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        },
+                        {
+                            "channel": "itvbe",
+                            "channelType": "simulcast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        },
+                        {
+                            "channel": "itv2",
+                            "channelType": "simulcast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        },
+                        {
+                            "channel": "itv3",
+                            "channelType": "simulcast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        },
+                        {
+                            "channel": "itv4",
+                            "channelType": "simulcast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        },
+                        {
+                            "channel": "citv",
+                            "channelType": "simulcast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        },
+                        {
+                            "channelType": "fast",
+                            "featureSet": [
+                                "dvb-dash",
+                                "playready"
+                            ],
+                            "acceptHeader": "application/vnd.itv.online.playlist.sim.v3+json",
+                            "playerEngine": "xdk"
+                        }
+                    ]
+                }
+            }
+        },
+        "vod": {
+            "playlistOverride": {
+                "enabled": true,
+                "acceptHeader": "application/vnd.itv.vod.playlist.v2+json"
+            }
+        },
+        "emailVerificationStandardUser": true,
+        "britbox": {
+            "enabled": true,
+            "options": {
+                "pageType": "notSupported"
+            }
+        },
+        "myList": true,
+        "myListPage": true,
+        "continueWatching": true,
+        "recommendations": true,
+        "curatedTileImages": true,
+        "becauseYouWatched": false,
+        "onwardJourney": true,
+        "profilesManagement": true,
+        "textSearch": true,
+        "targetedContainers": {
+            "enabled": true,
+            "featured": {
+                "featuredSliderSlot1": true
+            },
+            "promoted": {
+                "promotedProductionsSliderSlot4": true,
+                "promotedProductionsSliderSlot2": true,
+                "promotedProductionsSliderSlot3": true,
+                "promotedProductionsSliderSlot1": true
+            },
+            "genreSliders": {
+                "genreSliderSlot1": true,
+                "genreSliderSlot2": true,
+                "genreSliderSlot4": true,
+                "genreSliderSlot3": true
+            }
+        },
+        "collectionsNavIcon": false,
+        "suppressSponsorship": true,
+        "newsShortform": true,
+        "newsCategoryPage": true,
+        "mostPopular": true,
+        "regionalisation": true,
+        "SVODExperience": true,
+        "liveRecommendations": false,
+        "searchExperience": false,
+        "searchLinear": false,
+        "postcodeCapture": false,
+        "regionalSimulcast": false,
+        "enablePlayerError3016": true,
+        "multiChoiceSignIn": false,
+        "regionalNews": true,
+        "regionalNewsSignIn": false,
+        "enhancedCategories": true,
+        "enabledPlayerErrors": [
+            "1003_X",
+            "3016_S",
+            "6001_S",
+            "6006_S"
+        ],
+        "adsOnPause": false,
+        "convivaAppInsights": false,
+        "dPadTrickPlay": true,
+        "skipIntro": true,
+        "samsungContinueWatching": false
+    },
+    "profile": {
+        "animations": false,
+        "dPadTrickPlay": true,
+        "enableHeroAutorotation": false,
+        "limitEditorialRailsTo": "base",
+        "limitEditorialTilesPerRailTo": "base",
+        "limitEditorialHeroTo": "base",
+        "limitProgressIndicatorTo": "base",
+        "limitLoadingAssetTo": "base",
+        "skipIntro": false,
+        "enableGTM": true
+    },
+    "resources": {
+        "cookiePolicy": "https://assets.fe.itv.com/legal/cookies/connected-tv/cookies.html",
+        "privacyPolicy": "https://assets.fe.itv.com/legal/privacy/connected-tv/privacy-gdpr.html",
+        "terms": "https://assets.fe.itv.com/legal/terms/connected-tv/cassandra/terms-gdpr-itvx.html"
+    },
+    "tracking": {
+        "webVitals": "https://http-inputs-itv.splunkcloud.com/services/collector",
+        "cpt": "https://cpt.itv.com/0.0.1/event",
+        "pes": "https://secure.pes.itv.com/1.1.3/event",
+        "conviva": {
+            "enabled": true,
+            "test": {
+                "customerKey": "614f017665482d18dee1e746f4ad7140a2ca4eaa"
+            },
+            "prod": {
+                "customerKey": "822d428ad6a0a99e585ae79b04746ccfc541cad1"
+            }
+        },
+        "ga": {
+            "token": "UA-17825253-118"
+        },
+        "gtm": {
+            "token": "GTM-52XV8MF"
+        },
+        "ace": {
+            "url": "https://secure.pes.itv.com/ace/0.1.1/event"
+        }
+    },
+    "options": {
+        "nowNext": {
+            "pollingInterval": 900000
+        },
+        "hubPlus": {
+            "upgradeUrl": "www.itv.com/upgrade",
+            "qrCode": "hubplus-subscribe.png"
+        },
+        "premium": {
+            "paymentJourney": true,
+            "upgradeUrl": "www.itv.com/fvp/subscribe",
+            "qrCode": "premium-freeview-subscribe.png"
+        },
+        "regionalisation": {
+            "postcodeCaptureTrigger": 1696809600000
+        }
+    },
+    "regions": {
+        "london": {
+            "region": "london",
+            "broadcaster": "ITV",
+            "newsRegion": "LONDON"
+        },
+        "meridian_east": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "MERIDIAN"
+        },
+        "meridian_south_coast": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "MERIDIAN"
+        },
+        "meridian_thames_valley": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "MERIDIAN"
+        },
+        "channel_islands": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "CHANNEL"
+        },
+        "anglia_east": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "ANGLIA"
+        },
+        "anglia_west": {
+            "region": "meridian_east",
+            "broadcaster": "ITV",
+            "newsRegion": "ANGLIA"
+        },
+        "central_west": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "CENTRAL"
+        },
+        "central_east": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "CENTRAL"
+        },
+        "west": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "WESTCOUNTRY"
+        },
+        "west_country": {
+            "region": "central_west",
+            "broadcaster": "ITV",
+            "newsRegion": "WESTCOUNTRY"
+        },
+        "wales": {
+            "region": "wales",
+            "broadcaster": "ITV",
+            "newsRegion": "WALES"
+        },
+        "granada": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "GRANADA"
+        },
+        "border_england": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "BORDER"
+        },
+        "border_scotland": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "BORDER"
+        },
+        "tyne_tees": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "TYNETEES"
+        },
+        "emley_moor": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "CALENDAR"
+        },
+        "belmont": {
+            "region": "granada",
+            "broadcaster": "ITV",
+            "newsRegion": "CALENDAR"
+        },
+        "ulster": {
+            "region": "ulster",
+            "broadcaster": "ITV",
+            "newsRegion": "UTV"
+        },
+        "stv_central": {
+            "region": "stv_central",
+            "broadcaster": "STV"
+        },
+        "stv_north": {
+            "region": "stv_north",
+            "broadcaster": "STV"
+        },
+        "default": {
+            "region": "london",
+            "broadcaster": "unknown"
+        }
+    }
+}
